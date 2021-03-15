@@ -3,6 +3,8 @@
     Welcome to {{ title }}!
   </h1>
   
+  <input type="text" [(ngModel)]="power"/>
+{{ power | exponential }}
 
   <input type="text" placeholder="Name" [(ngModel)]="name" />
   <button (click)="addName(name)">Add Name</button>
