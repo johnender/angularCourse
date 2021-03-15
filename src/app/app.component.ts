@@ -63,6 +63,11 @@ export class AppComponent {
   deleteName(index: number) {
     this.names.splice(index, 1);
   }
+
+  clickOnProduct(id: number){
+    console.log("product");
+    console.log(id);
+  }
 }
 // export class AppComponent {
 //   title = 'platziStore';

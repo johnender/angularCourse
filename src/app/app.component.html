@@ -22,7 +22,7 @@
 
   <!-- Trying the object array ngFor -->
   <div *ngFor="let product of products">
-    <app-product [product]="product"></app-product>
+    <app-product (productClick)="clickOnProduct($event)" [product]="product"></app-product>
   </div>
 </div>
 
