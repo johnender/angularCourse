@@ -46,6 +46,6 @@ export class ProductComponent implements OnChanges, OnInit, DoCheck, OnDestroy {
 
 	addToCart(){
 		console.log("agregar");
-    this.productClick.emit(this.product.id)
+    this.productClick.emit(this.product.id);
   }
 }
