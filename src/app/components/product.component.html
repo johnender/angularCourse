@@ -1,0 +1,9 @@
+<h3>{{ product.title }}</h3>
+<img [src]="product.image" alt="Product Image" width="200">
+<strong class="price">{{ product.price }}</strong>
+<div [ngSwitch]="product.price">
+  <p *ngSwitchCase="800.00">10% de descuento en tu siguiente compra</p>
+  <p *ngSwitchCase="8000.00">Envío gratuito</p>
+  <p *ngSwitchCase="80000.00">Envío gratuito + 5% de descuento extra</p>
+  <p *ngSwitchDefault>Sin promocion</p>
+</div>

@@ -1,4 +1,46 @@
-<input type="text" [(ngModel)]="title"/>
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  
+
+  <input type="text" placeholder="Name" [(ngModel)]="name" />
+  <button (click)="addName(name)">Add Name</button>
+
+  <ng-container *ngIf="names.length > 0; else elseTemplate">
+    <li style="list-style: none;">
+      <ul *ngFor="let name of names, index as i">
+        Position: {{ i }} Name: {{name}}
+        <button (click)="deleteName(i)">Delete Name</button>
+      </ul>
+    </li>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <p>Names array is empty</p>
+  </ng-template>
+
+
+  <!-- Trying the object array ngFor -->
+  <div *ngFor="let product of products">
+    <app-product [product]="product"></app-product>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <input type="text" [(ngModel)]="title"/>
 {{ title }}
 
 <div *ngIf ="title ==='nicolas'">
@@ -17,7 +59,7 @@
   Agregar un item al array, con un valor capturado de un input
 </p>
 <input type="text" [(ngModel)]="nombre">
-<button (click)="addItem(nombre)">Nuevo Item</button>
+<button (click)="addItem(nombre)">Nuevo Item</button> -->
 
 <!-- <input type="text" [(ngModel)]="title"/>
 {{ title }}
