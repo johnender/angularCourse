@@ -1,5 +1,5 @@
 <h3>{{ product.title }}</h3>
-<img [src]="product.image" alt="Product Image" width="200">
+<img [src]="product.image" alt="Product Image">
 <strong class="price">{{ product.price }}</strong>
 <div [ngSwitch]="product.price">
   <p *ngSwitchCase="800.00">10% de descuento en tu siguiente compra</p>
