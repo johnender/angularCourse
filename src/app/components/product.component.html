@@ -10,3 +10,6 @@
 <p>{{ product.description | slice:0:10 }}</p>
 <p>{{ today | date: 'medium' }}</p>
 <button (click)="addToCart()">Agregar al carrito</button>
+<a routerLink="./{{product.id}}">Ver detalle</a>
+<!-- Otra forma que funciona concatenando
+<a [routerLink]="['./', product.id]">Ver detalle</a> -->
