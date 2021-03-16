@@ -15,6 +15,7 @@ import { LayoutComponent } from './layout/layout.component';
 
 
 import { SharedModule} from './shared/shared.module'
+import { CoreModule} from './core/core.module'
 
 @NgModule({
   declarations: [
