@@ -5,3 +5,10 @@ nav > a {
 nav > a.active {
   background-color: blue;
 }
+
+.header-row {
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
