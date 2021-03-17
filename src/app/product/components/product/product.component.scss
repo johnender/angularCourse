@@ -1,11 +1,23 @@
-:host{
-  border: 1px solid black;
-  margin: 10px auto;
-  border-radius: 5px;
-  display: block;
-  max-width: 90%;
-}
+// :host{
+//   border: 1px solid black;
+//   margin: 10px auto;
+//   border-radius: 5px;
+//   display: block;
+//   max-width: 90%;
+// }
 
 img {
   max-width: 90%;
+}
+
+.crop-image {
+  display: block;
+  height: 300px;
+  width: 100%;
+  img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+  }
 }
