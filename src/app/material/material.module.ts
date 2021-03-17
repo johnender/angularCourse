@@ -18,6 +18,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort'
 
+import { MatStepperModule } from '@angular/material/stepper';
+
 
 import { LayoutModule } from '@angular/cdk/layout';
 
@@ -41,7 +43,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    LayoutModule
+    LayoutModule,
+    MatStepperModule,
   ],
   exports: [
     MatButtonModule,
@@ -59,7 +62,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    LayoutModule
+    LayoutModule,
+    MatStepperModule,
   ]
 })
 export class MaterialModule { }
