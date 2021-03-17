@@ -1,13 +1,11 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
-import Swiper from 'swiper';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
-  styleUrls: ['./banner.component.css']
+  styleUrls: ['./banner.component.scss']
 })
-export class BannerComponent implements OnInit, AfterViewInit  {
-  mySwiper: Swiper;
+export class BannerComponent implements OnInit {
 
   images: string[] = [
     'assets/images/banner-1.jpg',
@@ -17,11 +15,7 @@ export class BannerComponent implements OnInit, AfterViewInit  {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  ngAfterViewInit() {
-    this.mySwiper = new Swiper('.swiper-container');
+  ngOnInit() {
   }
 
 }
