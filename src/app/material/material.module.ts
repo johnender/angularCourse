@@ -19,6 +19,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort'
 
 
+import { LayoutModule } from '@angular/cdk/layout';
+
+
 @NgModule({
   declarations: [],
   imports: [
@@ -38,6 +41,7 @@ import { MatSortModule } from '@angular/material/sort'
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    LayoutModule
   ],
   exports: [
     MatButtonModule,
@@ -55,6 +59,7 @@ import { MatSortModule } from '@angular/material/sort'
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    LayoutModule
   ]
 })
 export class MaterialModule { }

@@ -7,18 +7,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule} from './../material/material.module';
 import { NavComponent } from './components/nav/nav.component';
-import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ListProductsComponent } from './components/list-products/list-products.component';
+import { ProductsListComponent } from './components/products-list/products-list.component';
 
 @NgModule({
-  declarations: [ProductFormComponent, NavComponent, DashboardComponent, ListProductsComponent],
+  declarations: [ProductFormComponent, NavComponent, DashboardComponent, ListProductsComponent, ProductsListComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
     ReactiveFormsModule,
     MaterialModule,
-    LayoutModule,
   ]
 })
 export class AdminModule { }
